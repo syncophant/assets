@@ -7,151 +7,108 @@
 <body>
 <x-dc>
 <helmet>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
   <style>
-    body { margin: 0; background: #dde3e9; font-family: 'Space Grotesk', -apple-system, system-ui, sans-serif; color: #17222c; -webkit-font-smoothing: antialiased; }
-    a { color: #0f8a99; } a:hover { color: #0d7987; }
+    body { margin: 0; background: #cfd3d8; font-family: -apple-system, 'SF Pro Text', system-ui, sans-serif; color: #1d1d1f; -webkit-font-smoothing: antialiased; }
+    a { color: #0f8a99; } a:hover { color: #0b6b77; }
   </style>
 </helmet>
-<div style="width: 1120px; height: 760px; padding: 20px; box-sizing: border-box; background: #dde3e9;">
-  <div style="width: 1080px; height: 720px; border-radius: 10px; overflow: hidden; background: #ffffff; display: flex; flex-direction: column; box-shadow: 0 16px 44px rgba(16,24,32,0.16); border: 1px solid #cfd7de; box-sizing: border-box;">
+<div style="width: 1120px; height: 760px; padding: 20px; box-sizing: border-box; background: #cfd3d8;">
+  <div style="width: 1080px; height: 720px; border-radius: 11px; overflow: hidden; background: #f5f5f7; display: flex; box-shadow: 0 18px 50px rgba(20,24,30,0.28); border: 1px solid #b9bec4; box-sizing: border-box;">
 
-    <div style="height: 52px; display: flex; align-items: center; gap: 16px; padding: 0 20px; background: #fbfcfd; border-bottom: 1px solid #e4e9ee; flex-shrink: 0;">
-      <div style="display: flex; gap: 8px; align-items: center;">
+    <div style="width: 212px; background: #eceef0; border-right: 1px solid #dcdfe2; display: flex; flex-direction: column; padding: 14px 10px; box-sizing: border-box; flex-shrink: 0;">
+      <div style="display: flex; gap: 8px; align-items: center; padding: 4px 8px 16px 8px;">
         <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f57;"></div>
         <div style="width: 12px; height: 12px; border-radius: 50%; background: #febc2e;"></div>
         <div style="width: 12px; height: 12px; border-radius: 50%; background: #28c840;"></div>
       </div>
-      <div style="display: flex; align-items: center; gap: 9px; margin-left: 8px;">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="2" fill="#0f8a99"></rect><path d="M6.5 9.5h10.6l-2.8-2.8M17.5 14.5H6.9l2.8 2.8" stroke="#ffffff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        <span style="font-size: 14px; font-weight: 600; letter-spacing: -0.01em;">Syncophant</span>
+      <div style="display: flex; align-items: center; gap: 9px; background: #dcdee2; border-radius: 7px; padding: 7px 10px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0f8a99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 9.5h10.6l-2.8-2.8"></path><path d="M17.5 14.5H6.9l2.8 2.8"></path></svg>
+        <span style="font-size: 13px; font-weight: 600;">Pairings</span>
+        <div style="flex: 1;"></div>
+        <span style="font-size: 11.5px; color: #86868b;">4</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 9px; padding: 7px 10px; margin-top: 2px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6e6e73" stroke-width="1.8"><ellipse cx="12" cy="6" rx="7" ry="2.6"></ellipse><path d="M5 6v12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6"></path></svg>
+        <span style="font-size: 13px; color: #3a3a3c;">Accounts</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 9px; padding: 7px 10px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6e6e73" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
+        <span style="font-size: 13px; color: #3a3a3c;">Activity</span>
       </div>
       <div style="flex: 1;"></div>
-      <div style="display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 13px; background: #ffffff; border: 1px solid #d5dce3; border-radius: 0; font-size: 13px; font-weight: 600; color: #17222c;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 9.5h10.6l-2.8-2.8"></path><path d="M17.5 14.5H6.9l2.8 2.8"></path></svg>
-        <span>Sync all</span>
-      </div>
-      <div style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 0; color: #5c6c7b;">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.8" stroke-linecap="round"><path d="M4.5 8h15"></path><path d="M4.5 16h15"></path><circle cx="9.5" cy="8" r="2.1" fill="#fbfcfd"></circle><circle cx="14.5" cy="16" r="2.1" fill="#fbfcfd"></circle></svg>
+      <div style="display: flex; align-items: center; gap: 8px; padding: 8px 10px; color: #0f8a99;">
+        <span style="font-size: 16px; font-weight: 500; line-height: 1;">+</span>
+        <span style="font-size: 13px; font-weight: 500;">New Pairing</span>
       </div>
     </div>
 
-    <div style="flex: 1; background: #f7f9fb; padding: 30px 40px; box-sizing: border-box; overflow: hidden;">
-      <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <div style="font-size: 20px; font-weight: 700; letter-spacing: -0.015em;">Pairings</div>
-          <div style="font-size: 13px; color: #8b98a5; font-weight: 500;">4</div>
-          <div style="flex: 1;"></div>
-          <div style="display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 14px; background: #0f8a99; border-radius: 0; font-size: 13px; font-weight: 600; color: #ffffff;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M12 5.5v13"></path><path d="M5.5 12h13"></path></svg>
-            <span>New pairing</span>
+    <div style="flex: 1; padding: 26px 30px; box-sizing: border-box; overflow: hidden;">
+      <div style="display: flex; align-items: center;">
+        <div>
+          <div style="font-size: 22px; font-weight: 700; letter-spacing: -0.02em;">Pairings</div>
+          <div style="font-size: 12.5px; color: #86868b; margin-top: 3px;">All synced · last activity 2 minutes ago</div>
+        </div>
+        <div style="flex: 1;"></div>
+        <div style="background: #0f8a99; color: #ffffff; font-size: 13px; font-weight: 600; border-radius: 8px; padding: 8px 14px; box-shadow: 0 1px 2px rgba(15,138,153,0.35);">Sync All</div>
+      </div>
+
+      <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
+
+        <div style="background: #ffffff; border-radius: 10px; box-shadow: 0 1px 3px rgba(20,24,30,0.08); padding: 13px 16px; display: flex; align-items: center; gap: 13px;">
+          <div style="width: 38px; height: 38px; border-radius: 9px; background: #e7f4f6; display: flex; align-items: center; justify-content: center;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#0f8a99" stroke-width="1.8" stroke-linejoin="round"><path d="M4 7.5c0-1.1.9-2 2-2h4l2 2.5h6c1.1 0 2 .9 2 2V17c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.5z"></path></svg>
+          </div>
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 14.5px; font-weight: 600;">Obsidian Vault</div>
+            <div style="font-family: 'SF Mono', ui-monospace, Menlo, monospace; font-size: 11px; color: #86868b; margin-top: 2px;">~/Documents/Obsidian → GitHub · vault-backup</div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 7px;">
+            <div style="width: 7px; height: 7px; border-radius: 50%; background: #30b350;"></div>
+            <span style="font-size: 12.5px; color: #6e6e73;">Synced 2 min ago</span>
           </div>
         </div>
 
-        <div style="background: #ffffff; border: 1px solid #e4e9ee; border-radius: 0;">
-
-          <div style="display: flex; align-items: center; gap: 14px; padding: 14px 18px;">
-            <div style="width: 38px; height: 38px; border-radius: 0; background: #eef2f5; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.7" stroke-linejoin="round"><path d="M4 7.5c0-1.1.9-2 2-2h4l2 2.5h6c1.1 0 2 .9 2 2V17c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.5z"></path></svg>
+        <div style="background: #ffffff; border-radius: 10px; box-shadow: 0 1px 3px rgba(20,24,30,0.08); padding: 13px 16px; display: flex; flex-direction: column; gap: 9px;">
+          <div style="display: flex; align-items: center; gap: 13px;">
+            <div style="width: 38px; height: 38px; border-radius: 9px; background: #e7f4f6; display: flex; align-items: center; justify-content: center;">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#0f8a99" stroke-width="1.8" stroke-linejoin="round"><path d="M4 7.5c0-1.1.9-2 2-2h4l2 2.5h6c1.1 0 2 .9 2 2V17c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.5z"></path></svg>
             </div>
             <div style="flex: 1; min-width: 0;">
-              <div style="font-size: 14px; font-weight: 600;">Obsidian Vault</div>
-              <div style="font-size: 11.5px; color: #8b98a5; margin-top: 3px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">~/Documents/Obsidian</div>
+              <div style="font-size: 14.5px; font-weight: 600;">Photography</div>
+              <div style="font-family: 'SF Mono', ui-monospace, Menlo, monospace; font-size: 11px; color: #86868b; margin-top: 2px;">~/Pictures/Exports → Cloudflare R2 · media-backups</div>
             </div>
-            <div style="display: flex; align-items: center; gap: 10px; width: 265px;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b98a5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M14.5 8.5 18 12l-3.5 3.5"></path></svg>
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.7" stroke-linecap="round"><circle cx="6" cy="6" r="2.2"></circle><circle cx="6" cy="18" r="2.2"></circle><circle cx="18" cy="8" r="2.2"></circle><path d="M6 8.2v7.6"></path><path d="M18 10.2c0 3.2-2.6 4.6-6 4.9-2.4.2-4.3.8-5.2 2.1"></path></svg>
-              <div>
-                <div style="font-size: 13px; font-weight: 500;">amruth/vault-backup</div>
-                <div style="font-size: 11px; color: #8b98a5; margin-top: 1px;">GitHub</div>
-              </div>
-            </div>
-            <div style="font-size: 11.5px; color: #8b98a5; width: 92px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">On change</div>
-            <div style="display: flex; align-items: center; gap: 7px; width: 150px; justify-content: flex-end;">
-              <div style="width: 7px; height: 7px; border-radius: 50%; background: #1a8a52;"></div>
-              <span style="font-size: 12px; color: #5c6c7b;">Synced · 2 min ago</span>
-            </div>
+            <span style="font-size: 12.5px; color: #0f8a99; font-weight: 600;">Uploading · 43%</span>
           </div>
-
-          <div style="border-top: 1px solid #eef2f5; padding: 14px 18px; display: flex; flex-direction: column; gap: 10px;">
-            <div style="display: flex; align-items: center; gap: 14px;">
-              <div style="width: 38px; height: 38px; border-radius: 0; background: #e7f4f6; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#0f8a99" stroke-width="1.7" stroke-linejoin="round"><path d="M4 7.5c0-1.1.9-2 2-2h4l2 2.5h6c1.1 0 2 .9 2 2V17c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.5z"></path></svg>
-              </div>
-              <div style="flex: 1; min-width: 0;">
-                <div style="font-size: 14px; font-weight: 600;">Photography</div>
-                <div style="font-size: 11.5px; color: #8b98a5; margin-top: 3px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">~/Pictures/Exports</div>
-              </div>
-              <div style="display: flex; align-items: center; gap: 10px; width: 265px;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b98a5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M14.5 8.5 18 12l-3.5 3.5"></path></svg>
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.7"><ellipse cx="12" cy="6" rx="7" ry="2.6"></ellipse><path d="M5 6v12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6"></path><path d="M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6"></path></svg>
-                <div>
-                  <div style="font-size: 13px; font-weight: 500;">media-backups</div>
-                  <div style="font-size: 11px; color: #8b98a5; margin-top: 1px;">Cloudflare R2</div>
-                </div>
-              </div>
-              <div style="font-size: 11.5px; color: #8b98a5; width: 92px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">Hourly</div>
-              <div style="display: flex; align-items: center; gap: 7px; width: 150px; justify-content: flex-end;">
-                <span style="font-size: 12px; color: #0f8a99; font-weight: 600;">Syncing · 43%</span>
-              </div>
-            </div>
-            <div style="padding-left: 52px; display: flex; flex-direction: column; gap: 6px;">
-              <div style="height: 4px; border-radius: 0; background: #e4e9ee; overflow: hidden;">
-                <div style="width: 43%; height: 4px; border-radius: 0; background: #0f8a99;"></div>
-              </div>
-              <div style="font-size: 11.5px; color: #8b98a5;">Uploading 12 of 87 files · 341 MB of 790 MB</div>
-            </div>
+          <div style="height: 5px; border-radius: 999px; background: #e8e8ed; margin-left: 51px;">
+            <div style="width: 43%; height: 5px; border-radius: 999px; background: #0f8a99;"></div>
           </div>
-
-          <div style="border-top: 1px solid #eef2f5; display: flex; align-items: center; gap: 14px; padding: 14px 18px;">
-            <div style="width: 38px; height: 38px; border-radius: 0; background: #eef2f5; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.7" stroke-linejoin="round"><path d="M4 7.5c0-1.1.9-2 2-2h4l2 2.5h6c1.1 0 2 .9 2 2V17c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.5z"></path></svg>
-            </div>
-            <div style="flex: 1; min-width: 0;">
-              <div style="font-size: 14px; font-weight: 600;">Papers</div>
-              <div style="font-size: 11.5px; color: #8b98a5; margin-top: 3px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">~/Documents/Papers</div>
-            </div>
-            <div style="display: flex; align-items: center; gap: 10px; width: 265px;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b98a5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H6"></path><path d="M9.5 8.5 6 12l3.5 3.5"></path></svg>
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.7" stroke-linecap="round"><rect x="4" y="5" width="16" height="6" rx="1.5"></rect><rect x="4" y="13" width="16" height="6" rx="1.5"></rect><circle cx="7.5" cy="8" r="0.9" fill="#5c6c7b"></circle><circle cx="7.5" cy="16" r="0.9" fill="#5c6c7b"></circle></svg>
-              <div>
-                <div style="font-size: 13px; font-weight: 500;">dav.pillai.xyz</div>
-                <div style="font-size: 11px; color: #8b98a5; margin-top: 1px;">Nextcloud · pull</div>
-              </div>
-            </div>
-            <div style="font-size: 11.5px; color: #8b98a5; width: 92px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">Every 6 hrs</div>
-            <div style="display: flex; align-items: center; gap: 7px; width: 150px; justify-content: flex-end;">
-              <div style="width: 7px; height: 7px; border-radius: 50%; background: #1a8a52;"></div>
-              <span style="font-size: 12px; color: #5c6c7b;">Synced · 1 hr ago</span>
-            </div>
-          </div>
-
-          <div style="border-top: 1px solid #eef2f5; display: flex; align-items: center; gap: 14px; padding: 14px 18px;">
-            <div style="width: 38px; height: 38px; border-radius: 0; background: #eef2f5; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.7" stroke-linejoin="round"><path d="M4 7.5c0-1.1.9-2 2-2h4l2 2.5h6c1.1 0 2 .9 2 2V17c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.5z"></path></svg>
-            </div>
-            <div style="flex: 1; min-width: 0;">
-              <div style="font-size: 14px; font-weight: 600;">Client Backups</div>
-              <div style="font-size: 11.5px; color: #8b98a5; margin-top: 3px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">/Volumes/Work/Clients</div>
-            </div>
-            <div style="display: flex; align-items: center; gap: 10px; width: 265px;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b98a5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M14.5 8.5 18 12l-3.5 3.5"></path></svg>
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.7"><ellipse cx="12" cy="6" rx="7" ry="2.6"></ellipse><path d="M5 6v12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6"></path><path d="M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6"></path></svg>
-              <div>
-                <div style="font-size: 13px; font-weight: 500;">acme-archive</div>
-                <div style="font-size: 11px; color: #8b98a5; margin-top: 1px;">AWS S3</div>
-              </div>
-            </div>
-            <div style="font-size: 11.5px; color: #8b98a5; width: 92px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">Daily · 02:00</div>
-            <div style="display: flex; align-items: center; gap: 7px; width: 150px; justify-content: flex-end;">
-              <div style="display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 10px; background: #faf1e2; border-radius: 0;">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#b06a17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5 21 19.5H3z"></path><path d="M12 10.2v4"></path><circle cx="12" cy="16.9" r="0.4" fill="#b06a17"></circle></svg>
-                <span style="font-size: 12px; font-weight: 600; color: #b06a17;">Needs review</span>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <div style="background: #ffffff; border-radius: 10px; box-shadow: 0 1px 3px rgba(20,24,30,0.08); padding: 13px 16px; display: flex; align-items: center; gap: 13px;">
+          <div style="width: 38px; height: 38px; border-radius: 9px; background: #eef0f2; display: flex; align-items: center; justify-content: center;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#6e6e73" stroke-width="1.8" stroke-linejoin="round"><path d="M4 7.5c0-1.1.9-2 2-2h4l2 2.5h6c1.1 0 2 .9 2 2V17c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.5z"></path></svg>
+          </div>
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 14.5px; font-weight: 600;">Papers</div>
+            <div style="font-family: 'SF Mono', ui-monospace, Menlo, monospace; font-size: 11px; color: #86868b; margin-top: 2px;">~/Documents/Papers ← Nextcloud · papers</div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 7px;">
+            <div style="width: 7px; height: 7px; border-radius: 50%; background: #30b350;"></div>
+            <span style="font-size: 12.5px; color: #6e6e73;">Synced 1 hour ago</span>
+          </div>
+        </div>
+
+        <div style="background: #fffbf2; border: 1px solid #f2dfb3; border-radius: 10px; padding: 13px 16px; display: flex; align-items: center; gap: 13px;">
+          <div style="width: 38px; height: 38px; border-radius: 9px; background: #faf1dc; display: flex; align-items: center; justify-content: center;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#b06a17" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5 21 19.5H3z"></path><path d="M12 10.2v4"></path><circle cx="12" cy="16.9" r="0.45" fill="#b06a17"></circle></svg>
+          </div>
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 14.5px; font-weight: 600;">Client Backups</div>
+            <div style="font-family: 'SF Mono', ui-monospace, Menlo, monospace; font-size: 11px; color: #86868b; margin-top: 2px;">/Volumes/Work/Clients → AWS S3 · acme-archive</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #e3d5b3; color: #9a5b10; font-size: 12.5px; font-weight: 600; border-radius: 7px; padding: 6px 11px;">Review 214 deletes</div>
+        </div>
+
       </div>
     </div>
   </div>
