@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;450;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+  <style>
+    body { margin: 0; background: #1b1d20; font-family: 'IBM Plex Sans', -apple-system, system-ui, sans-serif; color: #f2f4f5; -webkit-font-smoothing: antialiased; }
+    a { color: #2dd4bf; } a:hover { color: #5eead4; }
+  </style>
+</helmet>
+<div style="width: 1120px; height: 760px; padding: 20px; box-sizing: border-box; background: #1b1d20;">
+  <div style="width: 1080px; height: 720px; border-radius: 10px; overflow: hidden; background: #0a0b0d; display: flex; flex-direction: column; box-shadow: 0 24px 60px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.09); box-sizing: border-box;">
+
+    <div style="height: 48px; display: flex; align-items: center; gap: 14px; padding: 0 18px; border-bottom: 1px solid rgba(255,255,255,0.07); flex-shrink: 0;">
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f57;"></div>
+        <div style="width: 12px; height: 12px; border-radius: 50%; background: #febc2e;"></div>
+        <div style="width: 12px; height: 12px; border-radius: 50%; background: #28c840;"></div>
+      </div>
+      <span style="font-family: 'Space Grotesk', sans-serif; font-size: 13.5px; font-weight: 500; letter-spacing: -0.01em; color: #e6e9ea; margin-left: 4px;">Syncophant</span>
+      <div style="flex: 1;"></div>
+      <div style="display: inline-flex; align-items: center; gap: 7px; height: 28px; padding: 0 10px; border: 1px solid rgba(255,255,255,0.09); border-radius: 6px; color: #6b7480; font-size: 12px;">
+        <span>Search or command</span>
+        <span style="font-family: 'Geist Mono', ui-monospace, Menlo, monospace; font-size: 10.5px; background: rgba(255,255,255,0.06); border-radius: 4px; padding: 2px 5px; color: #8b95a0;">⌘K</span>
+      </div>
+      <div style="display: inline-flex; align-items: center; height: 28px; padding: 0 12px; background: #2dd4bf; border-radius: 6px; color: #04211d; font-size: 12.5px; font-weight: 600;">Sync all</div>
+    </div>
+
+    <div style="flex: 1; padding: 26px 26px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px;">
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 500; letter-spacing: -0.015em;">Pairings</span>
+        <span style="font-size: 12px; color: #6b7480;">4</span>
+        <div style="flex: 1;"></div>
+        <span style="font-size: 12px; color: #6b7480;">All synced · 2 min ago</span>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+
+        <div style="background: #121417; border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 13px 16px; display: flex; align-items: center; gap: 14px;">
+          <div style="width: 7px; height: 7px; border-radius: 50%; background: #4ade80; flex-shrink: 0;"></div>
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 13.5px; font-weight: 500; color: #f2f4f5; letter-spacing: -0.005em;">Obsidian Vault</div>
+            <div style="font-family: 'Geist Mono', ui-monospace, Menlo, monospace; font-size: 11.5px; color: #6b7480; margin-top: 3px;">~/Documents/Obsidian → github:amruth/vault-backup</div>
+          </div>
+          <span style="font-size: 11.5px; color: #6b7480;">On change</span>
+          <span style="font-size: 12px; color: #8b95a0; width: 96px; text-align: right;">Synced · 2m</span>
+        </div>
+
+        <div style="background: #121417; border: 1px solid rgba(45,212,191,0.28); border-radius: 8px; padding: 13px 16px; display: flex; flex-direction: column; gap: 9px; box-shadow: 0 0 20px rgba(45,212,191,0.07);">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div style="width: 7px; height: 7px; border-radius: 50%; background: #2dd4bf; flex-shrink: 0;"></div>
+            <div style="flex: 1; min-width: 0;">
+              <div style="font-size: 13.5px; font-weight: 500; color: #f2f4f5; letter-spacing: -0.005em;">Photography</div>
+              <div style="font-family: 'Geist Mono', ui-monospace, Menlo, monospace; font-size: 11.5px; color: #6b7480; margin-top: 3px;">~/Pictures/Exports → r2:media-backups/photography</div>
+            </div>
+            <span style="font-size: 11.5px; color: #6b7480;">Hourly</span>
+            <span style="font-size: 12px; color: #2dd4bf; font-weight: 600; width: 96px; text-align: right;">43% · 12 of 87</span>
+          </div>
+          <div style="height: 3px; border-radius: 999px; background: rgba(255,255,255,0.06); margin-left: 21px;">
+            <div style="width: 43%; height: 3px; border-radius: 999px; background: #2dd4bf; box-shadow: 0 0 8px rgba(45,212,191,0.6);"></div>
+          </div>
+        </div>
+
+        <div style="background: #121417; border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 13px 16px; display: flex; align-items: center; gap: 14px;">
+          <div style="width: 7px; height: 7px; border-radius: 50%; background: #4ade80; flex-shrink: 0;"></div>
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 13.5px; font-weight: 500; color: #f2f4f5; letter-spacing: -0.005em;">Papers</div>
+            <div style="font-family: 'Geist Mono', ui-monospace, Menlo, monospace; font-size: 11.5px; color: #6b7480; margin-top: 3px;">~/Documents/Papers ← dav:nextcloud/papers</div>
+          </div>
+          <span style="font-size: 11.5px; color: #6b7480;">Every 6h</span>
+          <span style="font-size: 12px; color: #8b95a0; width: 96px; text-align: right;">Synced · 1h</span>
+        </div>
+
+        <div style="background: #17130d; border: 1px solid rgba(251,191,36,0.25); border-radius: 8px; padding: 13px 16px; display: flex; align-items: center; gap: 14px;">
+          <div style="width: 7px; height: 7px; border-radius: 50%; background: #fbbf24; flex-shrink: 0;"></div>
+          <div style="flex: 1; min-width: 0;">
+            <div style="font-size: 13.5px; font-weight: 500; color: #f2f4f5; letter-spacing: -0.005em;">Client Backups</div>
+            <div style="font-family: 'Geist Mono', ui-monospace, Menlo, monospace; font-size: 11.5px; color: #6b7480; margin-top: 3px;">/Volumes/Work/Clients → s3:acme-archive</div>
+          </div>
+          <span style="font-size: 11.5px; color: #6b7480;">Daily 02:00</span>
+          <span style="font-size: 12px; color: #fbbf24; font-weight: 600; width: 128px; text-align: right;">Needs review · 214</span>
+        </div>
+
+      </div>
+
+      <div style="flex: 1;"></div>
+      <div style="display: flex; align-items: center; gap: 8px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 12px;">
+        <span style="font-family: 'Geist Mono', ui-monospace, Menlo, monospace; font-size: 11px; color: #4b5563;">idle · index 1.2k files · press ⌘K for commands</span>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

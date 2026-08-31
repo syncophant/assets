@@ -1,14 +1,25 @@
 {
+  "pages": [
+    { "id": "page-directions", "name": "Direction pick" },
+    { "id": "page-current", "name": "v2 utilitarian (current)" }
+  ],
   "artboards": [
-    { "file": "Main.dc.html", "title": "Home", "x": 0, "y": 0, "w": 1120, "h": 760 },
-    { "file": "PairingDetail.dc.html", "title": "Pairing detail", "x": 1220, "y": 0, "w": 1120, "h": 760 },
-    { "file": "DeleteGuard.dc.html", "title": "Delete guard", "x": 2440, "y": 0, "w": 1120, "h": 760 },
-    { "file": "AddPairing.dc.html", "title": "New pairing — step 4", "x": 0, "y": 900, "w": 1120, "h": 760 },
-    { "file": "Accounts.dc.html", "title": "Accounts", "x": 1220, "y": 900, "w": 1120, "h": 760 },
-    { "file": "Tray.dc.html", "title": "Menu bar tray", "x": 2440, "y": 900, "w": 380, "h": 560 }
+    { "file": "DirectionInk.dc.html", "title": "A — Ink", "page": "page-directions", "x": 0, "y": 0, "w": 1120, "h": 760 },
+    { "file": "DirectionCarbon.dc.html", "title": "B — Carbon", "page": "page-directions", "x": 1220, "y": 0, "w": 1120, "h": 760 },
+    { "file": "DirectionNative.dc.html", "title": "C — Native", "page": "page-directions", "x": 2440, "y": 0, "w": 1120, "h": 760 },
+    { "file": "Main.dc.html", "title": "Home", "page": "page-current", "x": 0, "y": 0, "w": 1120, "h": 760 },
+    { "file": "PairingDetail.dc.html", "title": "Pairing detail", "page": "page-current", "x": 1220, "y": 0, "w": 1120, "h": 760 },
+    { "file": "DeleteGuard.dc.html", "title": "Delete guard", "page": "page-current", "x": 2440, "y": 0, "w": 1120, "h": 760 },
+    { "file": "AddPairing.dc.html", "title": "New pairing — step 4", "page": "page-current", "x": 0, "y": 900, "w": 1120, "h": 760 },
+    { "file": "Accounts.dc.html", "title": "Accounts", "page": "page-current", "x": 1220, "y": 900, "w": 1120, "h": 760 },
+    { "file": "Tray.dc.html", "title": "Menu bar tray", "page": "page-current", "x": 2440, "y": 900, "w": 380, "h": 560 }
   ],
   "annotations": [
-    { "id": "brief", "x": 0, "y": -170, "w": 330, "text": "Syncophant — static mockups, v2\nUtilitarian pass: sharp corners, Space Grotesk + Geist Mono, teal on cool slate\n\nScreens map to the approved architecture spec. Delete guard shows the max-delete safety rail; the wizard's step 4 carries the plain-language mirror warning." }
+    { "id": "pick-intro", "page": "page-directions", "x": 0, "y": -260, "w": 560, "text": "Three directions for the real Syncophant UI — same Home screen, same data, three worlds. Researched from Vercel's Geist system, Linear's redesign, and the soft-native Mac school (Things/Transmit). Pick one; the winner gets all six screens rebuilt in its language, then implemented in the app." },
+    { "id": "note-ink", "page": "page-directions", "x": 0, "y": -110, "w": 340, "text": "A — INK (Geist school)\nPaper & ink: no brand color at all — typography and hairlines do everything; status dots are the only chroma. Mono uppercase as the 'console voice', keyboard-first hints.\nWhy: the most unique of the three in 2026; reads like a beautifully typeset manifest — perfect for a tool about files.\nTradeoff: austere; can feel empty or cold if content is sparse. Dark variant needs care." },
+    { "id": "note-carbon", "page": "page-directions", "x": 1220, "y": -110, "w": 340, "text": "B — CARBON (Linear school)\nNear-black machined surfaces, hairline borders, low font weights, one electric teal used like a flashlight (action + progress only). ⌘K command bar, glowing active row.\nWhy: fits a tray-resident background daemon; dark-first suits dev desks; our mono paths already belong here.\nTradeoff: the most-imitated look in dev tools right now — distinctive execution required, or it reads generic. Light mode is the afterthought." },
+    { "id": "note-native", "page": "page-directions", "x": 2440, "y": -110, "w": 340, "text": "C — NATIVE (Things/Transmit school)\nSoft mac-native: real sidebar, white cards on warm gray, gentle depth, system type. The 'invisible tool' philosophy — the app disappears into macOS.\nWhy: lowest-friction familiarity; calm; ages well.\nTradeoff: the least unique — you asked for distinctive, and this is deliberately quiet. Also the hardest to keep consistent on Windows/Linux later." },
+    { "id": "brief", "page": "page-current", "x": 0, "y": -170, "w": 330, "text": "Syncophant — static mockups, v2\nUtilitarian pass: sharp corners, Space Grotesk + Geist Mono, teal on cool slate.\n\nSuperseded pending the direction pick on page 1." }
   ],
-  "launch": { "view": "canvas" }
+  "launch": { "view": "canvas", "page": "page-directions" }
 }
