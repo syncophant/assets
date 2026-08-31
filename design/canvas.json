@@ -1,0 +1,14 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "title": "Home", "x": 0, "y": 0, "w": 1120, "h": 760 },
+    { "file": "PairingDetail.dc.html", "title": "Pairing detail", "x": 1220, "y": 0, "w": 1120, "h": 760 },
+    { "file": "DeleteGuard.dc.html", "title": "Delete guard", "x": 2440, "y": 0, "w": 1120, "h": 760 },
+    { "file": "AddPairing.dc.html", "title": "New pairing — step 4", "x": 0, "y": 900, "w": 1120, "h": 760 },
+    { "file": "Accounts.dc.html", "title": "Accounts", "x": 1220, "y": 900, "w": 1120, "h": 760 },
+    { "file": "Tray.dc.html", "title": "Menu bar tray", "x": 2440, "y": 900, "w": 380, "h": 560 }
+  ],
+  "annotations": [
+    { "id": "brief", "x": 0, "y": -170, "w": 330, "text": "Syncophant — static mockups, v2\nUtilitarian pass: sharp corners, Space Grotesk + Geist Mono, teal on cool slate\n\nScreens map to the approved architecture spec. Delete guard shows the max-delete safety rail; the wizard's step 4 carries the plain-language mirror warning." }
+  ],
+  "launch": { "view": "canvas" }
+}

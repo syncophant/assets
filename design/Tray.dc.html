@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+  <style>
+    body { margin: 0; background: #dde3e9; font-family: 'Space Grotesk', -apple-system, system-ui, sans-serif; color: #17222c; -webkit-font-smoothing: antialiased; }
+    a { color: #0f8a99; } a:hover { color: #0d7987; }
+  </style>
+</helmet>
+<div style="width: 380px; height: 560px; padding: 24px; box-sizing: border-box; background: #dde3e9; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+  <div style="width: 300px; display: flex; justify-content: flex-end; padding-right: 18px;">
+    <div style="width: 30px; height: 24px; border-radius: 0; background: rgba(23,34,44,0.12); display: flex; align-items: center; justify-content: center;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#17222c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 9.5h10.6l-2.8-2.8"></path><path d="M17.5 14.5H6.9l2.8 2.8"></path></svg>
+    </div>
+  </div>
+  <div style="width: 320px; background: rgba(251,252,253,0.98); border: 1px solid #cfd7de; border-radius: 0; box-shadow: 0 14px 40px rgba(16,24,32,0.2); box-sizing: border-box; padding: 6px; display: flex; flex-direction: column;">
+
+    <div style="display: flex; align-items: center; gap: 10px; padding: 10px 10px 9px 10px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="2" fill="#0f8a99"></rect><path d="M6.5 9.5h10.6l-2.8-2.8M17.5 14.5H6.9l2.8 2.8" stroke="#ffffff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <div>
+        <div style="font-size: 13px; font-weight: 600;">All synced</div>
+        <div style="font-size: 11px; color: #8b98a5; margin-top: 1px;">4 pairings · last activity 2 min ago</div>
+      </div>
+    </div>
+
+    <div style="height: 1px; background: #e4e9ee; margin: 2px 8px;"></div>
+
+    <div style="display: flex; align-items: center; gap: 8px; padding: 7px 10px;">
+      <div style="width: 6px; height: 6px; border-radius: 50%; background: #1a8a52;"></div>
+      <span style="font-size: 12.5px; flex: 1;">Obsidian Vault</span>
+      <span style="font-size: 11px; color: #8b98a5;">2 min ago</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px; padding: 7px 10px;">
+      <div style="width: 6px; height: 6px; border-radius: 50%; background: #0f8a99;"></div>
+      <span style="font-size: 12.5px; flex: 1;">Photography</span>
+      <div style="width: 56px; height: 3px; border-radius: 0; background: #e4e9ee; overflow: hidden;"><div style="width: 43%; height: 3px; background: #0f8a99;"></div></div>
+      <span style="font-size: 11px; color: #0f8a99; font-weight: 600;">43%</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px; padding: 7px 10px;">
+      <div style="width: 6px; height: 6px; border-radius: 50%; background: #1a8a52;"></div>
+      <span style="font-size: 12.5px; flex: 1;">Papers</span>
+      <span style="font-size: 11px; color: #8b98a5;">1 hr ago</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px; padding: 7px 10px;">
+      <div style="width: 6px; height: 6px; border-radius: 50%; background: #b06a17;"></div>
+      <span style="font-size: 12.5px; flex: 1;">Client Backups</span>
+      <span style="font-size: 11px; color: #b06a17; font-weight: 600;">Needs review</span>
+    </div>
+
+    <div style="height: 1px; background: #e4e9ee; margin: 4px 8px;"></div>
+
+    <div style="display: flex; align-items: center; padding: 7px 10px; border-radius: 0; background: #0f8a99; margin: 2px 4px;">
+      <span style="font-size: 12.5px; font-weight: 500; color: #ffffff;">Sync all now</span>
+    </div>
+    <div style="display: flex; align-items: center; padding: 7px 10px; margin: 0 4px;">
+      <span style="font-size: 12.5px; flex: 1;">Pause syncing</span>
+      <span style="font-size: 11px; color: #8b98a5;">for 1 hour</span>
+    </div>
+    <div style="display: flex; align-items: center; padding: 7px 10px; margin: 0 4px;">
+      <span style="font-size: 12.5px; flex: 1;">Open Syncophant</span>
+      <span style="font-size: 11px; color: #b7c1cb;">⌘O</span>
+    </div>
+
+    <div style="height: 1px; background: #e4e9ee; margin: 4px 8px;"></div>
+
+    <div style="display: flex; align-items: center; padding: 7px 10px; margin: 0 4px 2px 4px;">
+      <span style="font-size: 12.5px; flex: 1;">Quit Syncophant</span>
+      <span style="font-size: 11px; color: #b7c1cb;">⌘Q</span>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+  <style>
+    body { margin: 0; background: #dde3e9; font-family: 'Space Grotesk', -apple-system, system-ui, sans-serif; color: #17222c; -webkit-font-smoothing: antialiased; }
+    a { color: #0f8a99; } a:hover { color: #0d7987; }
+  </style>
+</helmet>
+<div style="width: 1120px; height: 760px; padding: 20px; box-sizing: border-box; background: #dde3e9;">
+  <div style="width: 1080px; height: 720px; border-radius: 10px; overflow: hidden; background: #ffffff; display: flex; flex-direction: column; box-shadow: 0 16px 44px rgba(16,24,32,0.16); border: 1px solid #cfd7de; box-sizing: border-box;">
+
+    <div style="height: 52px; display: flex; align-items: center; gap: 16px; padding: 0 20px; background: #fbfcfd; border-bottom: 1px solid #e4e9ee; flex-shrink: 0;">
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f57;"></div>
+        <div style="width: 12px; height: 12px; border-radius: 50%; background: #febc2e;"></div>
+        <div style="width: 12px; height: 12px; border-radius: 50%; background: #28c840;"></div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 9px; margin-left: 8px;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="2" fill="#0f8a99"></rect><path d="M6.5 9.5h10.6l-2.8-2.8M17.5 14.5H6.9l2.8 2.8" stroke="#ffffff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <span style="font-size: 14px; font-weight: 600; letter-spacing: -0.01em;">Syncophant</span>
+      </div>
+    </div>
+
+    <div style="flex: 1; background: #f7f9fb; padding: 26px 40px; box-sizing: border-box; overflow: hidden;">
+      <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
+
+        <div style="display: flex; align-items: center; gap: 13px;">
+          <div style="display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 0; border: 1px solid #d5dce3; background: #ffffff;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6 9 12l5.5 6"></path></svg>
+          </div>
+          <div style="width: 40px; height: 40px; border-radius: 0; background: #e7f4f6; display: flex; align-items: center; justify-content: center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f8a99" stroke-width="1.7" stroke-linejoin="round"><path d="M4 7.5c0-1.1.9-2 2-2h4l2 2.5h6c1.1 0 2 .9 2 2V17c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.5z"></path></svg>
+          </div>
+          <div>
+            <div style="font-size: 18px; font-weight: 700; letter-spacing: -0.015em;">Photography</div>
+            <div style="font-size: 11.5px; color: #8b98a5; margin-top: 2px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">~/Pictures/Exports</div>
+          </div>
+          <div style="flex: 1;"></div>
+          <div style="display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 13px; background: #ffffff; border: 1px solid #d5dce3; border-radius: 0; font-size: 13px; font-weight: 600;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5c6c7b" stroke-width="1.7"><path d="M3.5 12S6.5 6.5 12 6.5 20.5 12 20.5 12 17.5 17.5 12 17.5 3.5 12 3.5 12z"></path><circle cx="12" cy="12" r="2.6"></circle></svg>
+            <span>Preview</span>
+          </div>
+          <div style="display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 14px; background: #0f8a99; border-radius: 0; font-size: 13px; font-weight: 600; color: #ffffff;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 9.5h10.6l-2.8-2.8"></path><path d="M17.5 14.5H6.9l2.8 2.8"></path></svg>
+            <span>Sync now</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 320px; gap: 16px; align-items: start;">
+
+          <div style="background: #ffffff; border: 1px solid #e4e9ee; border-radius: 0;">
+            <div style="padding: 13px 18px; border-bottom: 1px solid #eef2f5; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #5c6c7b;">Activity</div>
+
+            <div style="display: flex; align-items: center; gap: 12px; padding: 12px 18px;">
+              <div style="width: 7px; height: 7px; border-radius: 50%; background: #1a8a52; flex-shrink: 0;"></div>
+              <div style="font-size: 12.5px; color: #5c6c7b; width: 116px;">Today · 14:32</div>
+              <div style="font-size: 13px; font-weight: 500; flex: 1;">Uploaded 18 files · 2.1 MB</div>
+              <div style="font-size: 12px; color: #8b98a5;">3 s</div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 12px; padding: 12px 18px; border-top: 1px solid #f2f5f8;">
+              <div style="width: 7px; height: 7px; border-radius: 50%; background: #1a8a52; flex-shrink: 0;"></div>
+              <div style="font-size: 12.5px; color: #5c6c7b; width: 116px;">Today · 13:02</div>
+              <div style="font-size: 13px; font-weight: 500; flex: 1;">Uploaded 3 files · 214 KB</div>
+              <div style="font-size: 12px; color: #8b98a5;">1 s</div>
+            </div>
+
+            <div style="padding: 12px 18px; border-top: 1px solid #f2f5f8; display: flex; flex-direction: column; gap: 9px;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 7px; height: 7px; border-radius: 50%; background: #c04540; flex-shrink: 0;"></div>
+                <div style="font-size: 12.5px; color: #5c6c7b; width: 116px;">Yesterday · 22:00</div>
+                <div style="font-size: 13px; font-weight: 500; flex: 1;">Uploaded 39 files · 2 failed</div>
+                <div style="font-size: 12px; color: #8b98a5;">18 s</div>
+              </div>
+              <div style="margin-left: 19px; background: #faecec; border-radius: 0; padding: 10px 12px; display: flex; flex-direction: column; gap: 5px;">
+                <div style="font-size: 11.5px; color: #93403c; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">RAW/IMG_4412.cr3 — connection reset after 3 attempts</div>
+                <div style="font-size: 11.5px; color: #93403c; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">RAW/IMG_4415.cr3 — connection reset after 3 attempts</div>
+                <div style="margin-top: 3px;"><span style="font-size: 12px; font-weight: 600; color: #c04540;">Retry failed files</span></div>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 12px; padding: 12px 18px; border-top: 1px solid #f2f5f8;">
+              <div style="width: 7px; height: 7px; border-radius: 50%; background: #c6cfd8; flex-shrink: 0;"></div>
+              <div style="font-size: 12.5px; color: #5c6c7b; width: 116px;">Yesterday · 21:00</div>
+              <div style="font-size: 13px; color: #8b98a5; flex: 1;">No changes</div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 12px; padding: 12px 18px; border-top: 1px solid #f2f5f8;">
+              <div style="width: 7px; height: 7px; border-radius: 50%; background: #1a8a52; flex-shrink: 0;"></div>
+              <div style="font-size: 12.5px; color: #5c6c7b; width: 116px;">Yesterday · 09:12</div>
+              <div style="font-size: 13px; font-weight: 500; flex: 1;">Uploaded 41 files · 388 MB</div>
+              <div style="font-size: 12px; color: #8b98a5;">42 s</div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="background: #ffffff; border: 1px solid #e4e9ee; border-radius: 0;">
+              <div style="padding: 13px 16px; border-bottom: 1px solid #eef2f5; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #5c6c7b;">Details</div>
+              <div style="padding: 14px 16px; display: flex; flex-direction: column; gap: 11px;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline;"><span style="font-size: 12px; color: #8b98a5;">Direction</span><span style="font-size: 12.5px; font-weight: 500;">Push · local → remote</span></div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline;"><span style="font-size: 12px; color: #8b98a5;">Remote</span><span style="font-size: 11.5px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;">media-backups/photography</span></div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline;"><span style="font-size: 12px; color: #8b98a5;">Account</span><span style="font-size: 12.5px; font-weight: 500;">Cloudflare R2</span></div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline;"><span style="font-size: 12px; color: #8b98a5;">Schedule</span><span style="font-size: 12.5px; font-weight: 500;">Every hour</span></div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline;"><span style="font-size: 12px; color: #8b98a5;">Contents</span><span style="font-size: 12.5px; font-weight: 500;">87 files · 1.2 GB</span></div>
+              </div>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid #e4e9ee; border-radius: 0;">
+              <div style="padding: 13px 16px; border-bottom: 1px solid #eef2f5; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #5c6c7b;">Ignored patterns</div>
+              <div style="padding: 14px 16px; display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+                  <span style="font-size: 11.5px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace; background: #eef2f5; color: #8b98a5; border-radius: 0; padding: 4px 8px;">.DS_Store</span>
+                  <span style="font-size: 11.5px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace; background: #eef2f5; color: #17222c; border-radius: 0; padding: 4px 8px;">*.tmp</span>
+                  <span style="font-size: 11.5px; font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace; background: #eef2f5; color: #17222c; border-radius: 0; padding: 4px 8px;">Lightroom Cache/</span>
+                </div>
+                <div style="border: 1px dashed #c6cfd8; border-radius: 0; padding: 7px 10px; font-size: 12px; color: #8b98a5;">Add pattern…</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
