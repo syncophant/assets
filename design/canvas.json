@@ -1,14 +1,99 @@
 {
   "artboards": [
-    { "file": "Main.dc.html", "title": "Home", "x": 0, "y": 0, "w": 1120, "h": 760 },
-    { "file": "PairingDetail.dc.html", "title": "Pairing detail", "x": 1220, "y": 0, "w": 1120, "h": 760 },
-    { "file": "DeleteGuard.dc.html", "title": "Delete guard", "x": 2440, "y": 0, "w": 1120, "h": 760 },
-    { "file": "AddPairing.dc.html", "title": "New pairing sheet", "x": 0, "y": 900, "w": 1120, "h": 760 },
-    { "file": "Accounts.dc.html", "title": "Accounts", "x": 1220, "y": 900, "w": 1120, "h": 760 },
-    { "file": "Tray.dc.html", "title": "Menu bar tray (phase 2)", "x": 2440, "y": 900, "w": 380, "h": 560 }
+    {
+      "file": "Main.dc.html",
+      "title": "Home",
+      "x": 0,
+      "y": 0,
+      "w": 1120,
+      "h": 760,
+      "page": "page-app"
+    },
+    {
+      "file": "PairingDetail.dc.html",
+      "title": "Pairing detail",
+      "x": 1220,
+      "y": 0,
+      "w": 1120,
+      "h": 760,
+      "page": "page-app"
+    },
+    {
+      "file": "DeleteGuard.dc.html",
+      "title": "Delete guard",
+      "x": 2440,
+      "y": 0,
+      "w": 1120,
+      "h": 760,
+      "page": "page-app"
+    },
+    {
+      "file": "AddPairing.dc.html",
+      "title": "New pairing sheet",
+      "x": 0,
+      "y": 900,
+      "w": 1120,
+      "h": 760,
+      "page": "page-app"
+    },
+    {
+      "file": "Accounts.dc.html",
+      "title": "Accounts",
+      "x": 1220,
+      "y": 900,
+      "w": 1120,
+      "h": 760,
+      "page": "page-app"
+    },
+    {
+      "file": "Tray.dc.html",
+      "title": "Menu bar tray (phase 2)",
+      "x": 2440,
+      "y": 900,
+      "w": 380,
+      "h": 560,
+      "page": "page-app"
+    },
+    {
+      "file": "RowPatterns.dc.html",
+      "title": "Pairing row patterns",
+      "page": "page-rows",
+      "x": 0,
+      "y": 0,
+      "w": 1120,
+      "h": 1240
+    }
   ],
   "annotations": [
-    { "id": "brief", "x": 0, "y": -170, "w": 360, "text": "Syncophant, Native direction (chosen): soft mac-native, teal accent, light shown here; the app ships light + dark with WCAG-checked tokens. These screens mirror the implemented Flutter app. Tray artboard is phase 2 and still pre-redesign." }
+    {
+      "id": "brief",
+      "x": 0,
+      "y": -170,
+      "w": 360,
+      "text": "Syncophant, Native direction sharpened: sharp corners, no shadows, Space Grotesk, teal accent; light shown here, the app ships light + dark with WCAG-checked tokens. Pairing rows use the quiet-list treatment picked on the Row patterns page. These screens mirror the implemented Flutter app. Tray artboard is phase 2 and still pre-redesign.",
+      "page": "page-app"
+    },
+    {
+      "id": "rows-note",
+      "page": "page-rows",
+      "x": 0,
+      "y": -150,
+      "w": 380,
+      "text": "Row redesign exploration (Mobbin-school desktop patterns: Things, Linear, Notion). DECIDED: Option 1, Quiet list. Shipped in the app; the Home artboard on the App screens page now mirrors it. Options 2 and 3 kept for the record."
+    }
   ],
-  "launch": { "view": "canvas" }
+  "launch": {
+    "view": "canvas",
+    "page": "page-app"
+  },
+  "pages": [
+    {
+      "id": "page-app",
+      "name": "App screens"
+    },
+    {
+      "id": "page-rows",
+      "name": "Row patterns"
+    }
+  ]
 }
